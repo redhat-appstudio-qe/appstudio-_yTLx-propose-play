@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-sbfb
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/release-e2e-deploy-tenant/appstudio/dc-metro-map-sbfb@sha256:10b8b2ec201afa0ee798f6d55192074109149624b6d7b962609c76f9528ab6e5
+        name: my-nodejs
+        resources: {}
+status: {}
